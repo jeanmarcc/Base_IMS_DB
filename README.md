@@ -17,7 +17,7 @@ J’ai créé un modèle de données qui pourrait représenter le système d’i
 
 (Pour info, le nom des entités est limité dans IMS à 8 caractères et je les ai nommés en anglais par commodité)
 
-![](https://github.com/jeanmarcc/My_IMS_DB/blob/ad5e03a26140cd5e489a1c68cce79b9d6c7bdb57/DataModel.jpg)
+![](https://github.com/jeanmarcc/Base_IMS_DB/blob/90e19389f8b684ba5ce6cf963e128831054b80fa/DataModel.jpg)
 
 ## Liste des Entités (« segments » au sens IMS DB) :
 

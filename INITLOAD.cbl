@@ -1,5 +1,6 @@
        ID DIVISION.                                                     00011800
        PROGRAM-ID. INSRT.                                               00011900
+       AUTHOR. JEAN MARC C.
       *----------------------------------------------------------*      00012002
       * Auteur: Jean Marc C.                                            00012103
       *                                                                 00012203

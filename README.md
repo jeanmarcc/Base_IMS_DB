@@ -105,7 +105,7 @@ La création de la base IMS et son chargement initial sont réalisés en respect
 5.	JINITLOC + JINITLOA (compilation puis lancement du chargement en masse de la DB à partir d'un fichier séquentiel à plat)
 
 ## Fichiers en entrée
-•	MATEBF.IMS.TEST.DATA.MYPROJ : pour chargement en masse, contient toutes le données (segments) à charger initialement
+•	MATEBF.IMS.INITIAL.DATA.MYPROJ : pour chargement en masse, contient toutes le données (segments) à charger initialement
 
 •	MATEBF.IMS.P*.FI01IN.MYPROJ : fichiers utilisés par les programmes applicatifs réalisant les opérations CRUD
 

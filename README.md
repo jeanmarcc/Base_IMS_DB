@@ -1,7 +1,7 @@
 # Base IMS DB
 
 
-## Introduction
+## 1- Introduction
 Ce projet de démonstration présente la création d'une base IMS DB à partir d'un Modèle de Données ainsi que les programmes applicatifs COBOL permettant de réaliser les opérations courantes sur une base de données selon l’acronyme CRUD : « Creation », « Replace », « Update » et « Delete » de données dans la dB.
 
 ## Environnement 
@@ -12,14 +12,14 @@ Ce projet de démonstration présente la création d'une base IMS DB à partir d
 •	COBOL
 
 •	JCL
-## Modèle de données
+## 2- Modèle de données
 J’ai créé un modèle de données qui pourrait représenter la base de données d’un cabinet dentaire
 
 (Pour info, le nom des entités est limité dans IMS à 8 caractères et je les ai nommés en anglais par commodité)
 
 ![](https://github.com/jeanmarcc/Base_IMS_DB/blob/90e19389f8b684ba5ce6cf963e128831054b80fa/DataModel.jpg)
 
-## Liste des Entités (« segments » au sens IMS DB) :
+## 3- Liste des Entités (« segments » au sens IMS DB) :
 
 •	PATIENT
 
@@ -50,7 +50,7 @@ Cette entité représente le moyen de paiement utilise par le patient pour régl
 
 Contient des attributs additionnels du client comme son adresse postale
 
-## Liste des composants applicatifs  
+## 4- Liste des composants applicatifs  
     
 Cette liste contient les definitions en assembler, les programmes Cobol applicatifs et les JCL associés    
     
@@ -96,7 +96,7 @@ Cette liste contient les definitions en assembler, les programmes Cobol applicat
 
 
 
-## Séquence des traitements 
+## 5- Séquence des traitements 
 La création de la base IMS et son chargement initial sont réalisés en respectant la séquence :
 1.	JDBDGEN (création DBD)
 2.	JPSBGEN (création PSB pour chargement en masse)
@@ -104,10 +104,10 @@ La création de la base IMS et son chargement initial sont réalisés en respect
 4.	JHISAM (création fichiers physique VSAM qui contiendront la base IMS)
 5.	JINITLOC + JINITLOA (compilation puis lancement du chargement en masse de la DB à partir d'un fichier séquentiel à plat)
 
-## Fichiers en entrée
+## 6- Fichiers en entrée
 •	MATEBF.IMS.INITIAL.DATA.MYPROJ : pour chargement en masse, contient toutes le données (segments) à charger initialement
 
 •	MATEBF.IMS.P*.FI01IN.MYPROJ : fichiers utilisés par les programmes applicatifs réalisant les opérations CRUD
 
-## Auteur
+## 7- Auteur
 https://github.com/jeanmarcc

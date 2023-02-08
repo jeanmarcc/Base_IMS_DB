@@ -13,7 +13,7 @@ Ce projet de démonstration présente la création d'une base IMS DB à partir d
 
 •	JCL
 ## Modèle de données
-J’ai créé un modèle de données qui pourrait représenter le système d’information d’un cabinet dentaire
+J’ai créé un modèle de données qui pourrait représenter la base de données d’un cabinet dentaire
 
 (Pour info, le nom des entités est limité dans IMS à 8 caractères et je les ai nommés en anglais par commodité)
 

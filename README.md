@@ -40,11 +40,11 @@ Les médicaments prescrit pour le patient lors de l’acte médical avec le nom 
 
 •	BILLING
 
-Représente la facture pour la visite médicale donc l’attribut principal est le montant payé
+Représente la facture pour la visite médicale dont l’attribut principal est le montant payé
 
 •	PAYMENT
 
-Cette entité représente le moyen de paiement utilise par le patient pour régler l’acte comme « carte de crédit », « cheque » …
+Entité qui représente le moyen de paiement utilisé par le patient pour régler l’acte comme « carte de crédit », « chèque » …
 
 •	CONTACT
 
@@ -99,10 +99,10 @@ Cette liste contient les definitions en assembler, les programmes Cobol applicat
 ## 5- Séquence des traitements 
 La création de la base IMS et son chargement initial sont réalisés en respectant la séquence :
 1.	JDBDGEN (création DBD)
-2.	JPSBGEN (création PSB pour chargement en masse)
-3.	JPSBGENA (création PSB pour programmes applicatif CRUD)
-4.	JHISAM (création fichiers physique VSAM qui contiendront la base IMS)
-5.	JINITLOC + JINITLOA (compilation puis lancement du chargement en masse de la DB à partir d'un fichier séquentiel à plat)
+2.	JPSBGEN (création du PSB pour le programme de chargement en masse)
+3.	JPSBGENA (création du PSB pour les programmes applicatif CRUD)
+4.	JHISAM (création des fichiers physiques VSAM qui contiendront la base IMS)
+5.	JINITLOC + JINITLOA (compilation puis lancement du chargement en masse de la db à partir d'un fichier séquentiel à plat)
 
 ## 6- Fichiers en entrée
 •	MATEBF.IMS.INITIAL.DATA.MYPROJ : pour chargement en masse, contient toutes le données (segments) à charger initialement
